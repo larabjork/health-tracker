@@ -24,6 +24,7 @@ function Header(){
             <Nav.Link href="#medhistory">My Official MS Story</Nav.Link>
             <Nav.Link href="#mslife">My MS Milestones</Nav.Link>
             <Nav.Link href="#mslife">My Everyday Life with MS</Nav.Link>
+            <Nav.Link href="#about">About This App</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </div>
