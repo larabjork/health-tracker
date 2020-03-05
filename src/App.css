@@ -6,4 +6,7 @@
 
 h1 {
   font-family: 'Homemade Apple', cursive;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  text-align: center;
 }

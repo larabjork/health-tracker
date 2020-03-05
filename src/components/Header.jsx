@@ -10,25 +10,20 @@ function Header(){
     borderBottom: '8px solid #210124',
     backgroundColor: '#E5FCF5'
   }
-  const btnStyle = {
-    backgroundColor: '#210124',
-    borderColor: '#210124',
-    color: 'white',
-    fontWeight: 'bold'
-  }
+
 
 
 
   return (
     <>
     <Navbar style={HeaderGrid}>
-      <Navbar.Brand href="#home" className="brandName">MS Journal</Navbar.Brand>
+      <Navbar.Brand href="#home" className="brandName">My MS Story</Navbar.Brand>
       <div id="header">
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="#medhistory">What I Tell Doctors</Nav.Link>
-            <Nav.Link href="#mslife">Journaling My Life with MS</Nav.Link>
-            <Nav.Link href="#mslife">My Personal MS Milestones</Nav.Link>
+            <Nav.Link href="#medhistory">My Official MS Story</Nav.Link>
+            <Nav.Link href="#mslife">My MS Milestones</Nav.Link>
+            <Nav.Link href="#mslife">My Everyday Life with MS</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </div>
