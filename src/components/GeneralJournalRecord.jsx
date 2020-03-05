@@ -5,7 +5,7 @@ function GeneralJournalRecord(props){
   return (
       <div>
         <h3>Date: {props.date} </h3>
-        <p>Journal Entry: (props.journalEntry)</p>
+        <p>Journal Entry: {props.journalEntry}</p>
       </div>
   );
 }
