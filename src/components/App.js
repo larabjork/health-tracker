@@ -1,14 +1,14 @@
 import React from 'react';
 import './../App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Switch, Route } from 'react-router-dom';
+import Header from './Header'
 
-function App() {
+function App(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          the text will go here
-        </p>
-      </header>
+    <div>
+      <Header/>
+
     </div>
   );
 }
