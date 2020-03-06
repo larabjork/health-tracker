@@ -5,7 +5,14 @@
 }
 
 h1 {
-  font-family: 'Rock Salt', cursive;
+  font-family: 'Pacifico', cursive;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
   padding-top: 36px;
   padding-bottom: 36px;
   text-align: center;
