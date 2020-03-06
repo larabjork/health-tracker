@@ -6,8 +6,8 @@ function Header(){
   const HeaderGrid = {
     display: 'grid',
     gridTemplateColumns: '1fr 1fr',
-    borderTop: '8px solid #210124',
-    borderBottom: '8px solid #210124',
+    borderTop: '8px solid #3C0142cd ',
+    borderBottom: '8px solid #3C0142cd ',
     backgroundColor: '#E5FCF5'
   }
 
@@ -21,8 +21,8 @@ function Header(){
       <div id="header">
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="#medhistory">My Official MS Story</Nav.Link>
-            <Nav.Link href="#mslife">My MS Milestones</Nav.Link>
+            <Nav.Link href="#medhistory">The Medical Version</Nav.Link>
+            <Nav.Link href="#mslife">The Other Highlights</Nav.Link>
             <Nav.Link href="#mslife">My Everyday Life with MS</Nav.Link>
             <Nav.Link href="#about">About This App</Nav.Link>
           </Nav>

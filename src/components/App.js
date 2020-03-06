@@ -8,17 +8,23 @@ import Error404 from './Error404';
 import About from './About';
 import GeneralJournal from './GeneralJournal';
 import NewGeneralJournalRecordForm from './NewGeneralJournalRecordForm';
+import MedHistoryDigest from './MedHistoryDigest';
+import NewMedHistoryMilestoneForm from './NewMedHistoryMilestoneForm';
 
 function App(){
   return (
     <div className="bodyDiv">
       <Header/>
-      <Switch>
-        <Route exact path='/' component={GeneralJournal} />
-        <Route path='/journal-entry' component={NewGeneralJournalRecordForm} />
-        <Route path='/about' component={About} />
-        <Route component={Error404} />
-      </Switch>
+      <Container>
+        <Switch>
+          <Route exact path='/' component={GeneralJournal} />
+          <Route path='/mslife' component={NewGeneralJournalRecordForm} />
+          <Route path='/medhistory' component={MedHistoryDigest} />
+          <Route path='/medmilestone' component={NewMedHistoryMilestoneForm} />
+          <Route path='/about' component={About} />
+          <Route component={Error404} />
+        </Switch>
+      </Container>
     </div>
   );
 }
