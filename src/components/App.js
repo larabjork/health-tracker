@@ -8,6 +8,7 @@ import Error404 from './Error404';
 import About from './About';
 import Home from './Home';
 import Signin from './Signin';
+import Dashboard from './Dashboard';
 import GeneralJournal from './GeneralJournal';
 import NewGeneralJournalRecordForm from './NewGeneralJournalRecordForm';
 import MedHistoryDigest from './MedHistoryDigest';
@@ -23,7 +24,8 @@ function App(){
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/home' component={Home} />
-          <Route exact path='/signin' component={Signin} />
+          <Route path='/signin' component={Signin} />
+          <Route path='/dashboard' component={Dashboard} />
           <Route path='/journal' component={GeneralJournal} />
           <Route path='/journal-entry' component={NewGeneralJournalRecordForm} />
           <Route path='/med-digest' component={MedHistoryDigest} />

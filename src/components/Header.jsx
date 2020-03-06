@@ -17,7 +17,7 @@ function Header(){
   return (
     <>
     <Navbar style={HeaderGrid}>
-      <Navbar.Brand href="#home" className="brandName">My MS Story</Navbar.Brand>
+      <Navbar.Brand href="#home" className="brandName">My MS Stories</Navbar.Brand>
       <div id="header">
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">

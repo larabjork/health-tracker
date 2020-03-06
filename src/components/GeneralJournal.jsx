@@ -7,6 +7,10 @@ const masterGeneralJournal = [
   {
       date: "7/5/2010",
       journalEntry: "This is when it all started, sort of."
+  },
+  {
+      date: "2/12/2018",
+      journalEntry: "I can't believe I've come this far"
   }
 ]
 const btnStyle = {
