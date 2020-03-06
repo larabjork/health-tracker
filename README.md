@@ -1,3 +1,7 @@
+https://www.techrepublic.com/blog/web-designer/how-to-get-the-ruled-paper-background-effect-with-css3/
+
+
+
 ### CAPSTONE PLANNING--WORK IN PROGRESS
 ### 2/28/2020
 * 8:15 - 8:45 create README, read assignment, plan day
