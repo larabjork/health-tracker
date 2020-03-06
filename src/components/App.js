@@ -10,6 +10,8 @@ import GeneralJournal from './GeneralJournal';
 import NewGeneralJournalRecordForm from './NewGeneralJournalRecordForm';
 import MedHistoryDigest from './MedHistoryDigest';
 import NewMedHistoryMilestoneForm from './NewMedHistoryMilestoneForm';
+import MSExperienceDigest from './MSExperienceDigest';
+import NewMSExperienceMilestoneForm from './NewMSExperienceMilestoneForm';
 
 function App(){
   return (
@@ -21,6 +23,8 @@ function App(){
           <Route path='/mslife' component={NewGeneralJournalRecordForm} />
           <Route path='/medhistory' component={MedHistoryDigest} />
           <Route path='/medmilestone' component={NewMedHistoryMilestoneForm} />
+          <Route path='/mslife' component={MSExperienceDigest} />
+          <Route path='/experience-milestone' component={NewMSExperienceMilestoneForm} />
           <Route path='/about' component={About} />
           <Route component={Error404} />
         </Switch>
