@@ -22,6 +22,9 @@ function Header(){
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link href="#signin">Sign In</Nav.Link>
+            <Nav.Link href="#med-digest">Medical Story</Nav.Link>
+            <Nav.Link href="#exp-digest">Selfcare Story</Nav.Link>
+            <Nav.Link href="#journal">Journal</Nav.Link>
             <Nav.Link href="#about">About</Nav.Link>
           </Nav>
         </Navbar.Collapse>

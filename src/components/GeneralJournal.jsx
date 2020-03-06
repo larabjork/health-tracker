@@ -19,13 +19,14 @@ const btnStyle = {
 function GeneralJournal(){
   return (
     <div>
+      <h1>My Anything-Goes-Here Journal</h1>
       {masterGeneralJournal.map((entry, index) =>
         <GeneralJournalRecord date={entry.date}
           journalEntry={entry.journalEntry}
           key={index} />
       )}
       <Button style={btnStyle} to="/journal-entry" renderAs={Link}>Add New Journal Entry</Button>
-      
+
     </div>
   )
 };

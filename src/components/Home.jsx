@@ -16,11 +16,17 @@ function Home(){
       <Container>
         <h1>You are more than your diagnosis. </h1>
         <h2>And you have more than one story to tell about your life with MS.</h2>
-
-            <Button style={btnStyle} to="/signin" renderAs={Link}>Sign In</Button>
-            <br/>
-            <Button style={btnStyle} to="/about" renderAs={Link}>About the App</Button>
+        <ul>
+          <li>You go to the doctor(s)</li>
+          <li>You take care of yourself</li>
+          <li>You have a life</li>
+        </ul>
         <h3> icon1 for doctor + icon2 for selfcare + icon3 for journal</h3>
+
+            <Button style={btnStyle} to="/signin" renderAs={Link}>Sign Me In</Button>
+            <br/>
+            <br/>
+            <Button style={btnStyle} to="/about" renderAs={Link}>Tell Me More</Button>
       </Container>
     </div>
   )

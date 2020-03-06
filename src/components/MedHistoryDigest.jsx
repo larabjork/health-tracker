@@ -22,6 +22,7 @@ const btnStyle = {
 function MedHistoryDigest(){
   return (
     <div>
+      <h1>My Medical History</h1>
       {masterMedHistoryDigest.map((entry, index) =>
         <MedHistoryMilestone date={entry.date}
           historyEvent={entry.historyEvent}
