@@ -21,10 +21,8 @@ function Header(){
       <div id="header">
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="#med-digest">The Medical Version</Nav.Link>
-            <Nav.Link href="#exp-digest">The Other Highlights</Nav.Link>
-            <Nav.Link href="#journal">My Everyday Life with MS</Nav.Link>
-            <Nav.Link href="#about">About This App</Nav.Link>
+            <Nav.Link href="#signin">Sign In</Nav.Link>
+            <Nav.Link href="#about">About</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </div>
