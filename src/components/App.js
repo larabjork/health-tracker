@@ -6,6 +6,7 @@ import { Switch, Route } from 'react-router-dom';
 import Header from './Header';
 import Error404 from './Error404';
 import About from './About';
+import Home from './Home';
 import GeneralJournal from './GeneralJournal';
 import NewGeneralJournalRecordForm from './NewGeneralJournalRecordForm';
 import MedHistoryDigest from './MedHistoryDigest';
@@ -19,12 +20,14 @@ function App(){
       <Header/>
       <Container>
         <Switch>
-          <Route exact path='/' component={GeneralJournal} />
-          <Route path='/mslife' component={NewGeneralJournalRecordForm} />
-          <Route path='/medhistory' component={MedHistoryDigest} />
-          <Route path='/medmilestone' component={NewMedHistoryMilestoneForm} />
-          <Route path='/mslife' component={MSExperienceDigest} />
-          <Route path='/experience-milestone' component={NewMSExperienceMilestoneForm} />
+          <Route exact path='/' component={Home} />
+          <Route exact path='/home' component={Home} />
+          <Route path='/journal' component={GeneralJournal} />
+          <Route path='/journal-entry' component={NewGeneralJournalRecordForm} />
+          <Route path='/med-digest' component={MedHistoryDigest} />
+          <Route path='/med-milestone' component={NewMedHistoryMilestoneForm} />
+          <Route path='/exp-digest' component={MSExperienceDigest} />
+          <Route path='/exp-milestone' component={NewMSExperienceMilestoneForm} />
           <Route path='/about' component={About} />
           <Route component={Error404} />
         </Switch>
