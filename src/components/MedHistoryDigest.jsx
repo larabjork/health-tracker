@@ -27,7 +27,7 @@ function MedHistoryDigest(){
           historyEvent={entry.historyEvent}
           key={index} />
       )}
-      <Button style={btnStyle} to=/"med-milestone" renderAs={Link}>Add New Medical Milestone</Button>
+      <Button style={btnStyle} to="/med-milestone" renderAs={Link}>Add New Medical Milestone</Button>
     </div>
   )
 };
