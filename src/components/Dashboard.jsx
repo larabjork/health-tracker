@@ -26,19 +26,19 @@ function Dashboard() {
                 <Form.Check
                   type="radio"
                   label="Medical history milestone"
-                  name="formHorizontalRadios"
+                  name="formEntryTypeRadio"
                   id="formHorizontalRadios1"
                   />
                 <Form.Check
                   type="radio"
                   label="Self care milestone"
-                  name="formHorizontalRadios"
+                  name="formEntryTypeRadio"
                   id="formHorizontalRadios2"
                   />
                 <Form.Check
                   type="radio"
                   label="Journal entry"
-                  name="formHorizontalRadios"
+                  name="formEntryTypeRadio"
                   id="formHorizontalRadios3"
                   />
               </Col>
@@ -52,13 +52,13 @@ function Dashboard() {
               <Form.Check
                 type="radio"
                 label="Talking"
-                name="formHorizontalRadios"
+                name="formEntryMechanismRadio"
                 id="formHorizontalRadios4"
                 />
               <Form.Check
                 type="radio"
                 label="Typing"
-                name="formHorizontalRadios"
+                name="formEntryMechanismRadio"
                 id="formHorizontalRadios5"
                 />
             </Col>

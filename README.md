@@ -19,7 +19,8 @@ This app will help people who have multiple sclerosis (like me!) record and keep
 6. As a user, I want to be able to have a choice between using preset categories for actions I take and creating my own system (or somewhere in between), so that I have a balance of structure and flexibility.
 7. As a user, I want to be able to choose how I enter information (typed on laptop, tablet or phone, or recorded audio that is then transcribed), so that I can use whatever method is most convenient and most accessible at a given moment.
 
-
+### Current Version of Component Tree
+component tree v2.1 ![MS-Tracker-Component-Tree-v2.1](/MS-Tracker-Component-Tree-v2.1.jpg)
 
 
 PROJECT PROPOSAL TO BE REFINED TO MATCH ACTUAL PRODUCT
