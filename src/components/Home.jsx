@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Button, Row, Col }  from 'react-bootstrap';
+import { Container, Button, Row, Col, Image }  from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const btnStyle = {
@@ -26,10 +26,10 @@ function Home(){
       <Image src="icons8-treatment-64.png"/>
     </Col>
     <Col xs={6} md={4}>
-      <Image src="holder.js/171x180"/>
+      <Image src="icons8-reflection-40.png"/>
     </Col>
     <Col xs={6} md={4}>
-      <Image src="holder.js/171x180"/>
+      <Image src="icons8-journal-80.png"/>
     </Col>
   </Row>
 
