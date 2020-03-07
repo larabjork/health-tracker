@@ -15,7 +15,7 @@ function Signin(){
   return (
     <div>
       <Container>
-        <h1>Welcome! Ready for some storytelling?</h1>
+        <h1>Welcome!</h1>
         <Form>
           <Form.Group controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>

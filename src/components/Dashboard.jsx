@@ -13,9 +13,9 @@ function Dashboard() {
   return(
     <div>
       <Container>
-        <h1>My Story Dashboard</h1>
+        <h1>Story Dashboard</h1>
         <h2>accordion style views of three different journals; most recent entries showing by default?</h2>
-        <h1>I'm ready to add to my story!</h1>
+        <h1>Ready to add to your story?</h1>
         <Form>
           <fieldset>
             <Form.Group as={Row}>

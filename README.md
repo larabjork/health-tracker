@@ -22,6 +22,11 @@ This app will help people who have multiple sclerosis (like me!) record and keep
 ### Current Version of Component Tree
 component tree v2.1 ![MS-Tracker-Component-Tree-v2.1](/MS-Tracker-Component-Tree-v2.1.jpg)
 
+### Sources
+MAKE SURE THIS LICENSING STUFF IS ADDRESSED: https://icons8.com/license
+
+_ _
+
 
 PROJECT PROPOSAL TO BE REFINED TO MATCH ACTUAL PRODUCT
 
