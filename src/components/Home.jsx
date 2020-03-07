@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Button }  from 'react-bootstrap';
+import { Container, Button, Row, Col }  from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const btnStyle = {
@@ -21,7 +21,17 @@ function Home(){
           <li>You take care of yourself</li>
           <li>You have a life</li>
         </ul>
-        <h3> icon1 for doctor + icon2 for selfcare + icon3 for journal</h3>
+        <Row>
+    <Col xs={6} md={4}>
+      <Image src="icons8-treatment-64.png"/>
+    </Col>
+    <Col xs={6} md={4}>
+      <Image src="holder.js/171x180"/>
+    </Col>
+    <Col xs={6} md={4}>
+      <Image src="holder.js/171x180"/>
+    </Col>
+  </Row>
 
             <Button style={btnStyle} to="/signin" renderAs={Link}>Sign Me In</Button>
             <br/>
