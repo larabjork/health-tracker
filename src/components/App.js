@@ -16,28 +16,46 @@ import NewMedHistoryMilestoneForm from './NewMedHistoryMilestoneForm';
 import MSExperienceDigest from './MSExperienceDigest';
 import NewMSExperienceMilestoneForm from './NewMSExperienceMilestoneForm';
 
-function App(){
-  return (
-    <div className="bodyDiv">
-      <Header/>
-      <Container>
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route exact path='/home' component={Home} />
-          <Route path='/signin' component={Signin} />
-          <Route path='/dashboard' component={Dashboard} />
-          <Route path='/journal' component={GeneralJournal} />
-          <Route path='/journal-entry' component={NewEntryControl} />
-          <Route path='/med-digest' component={MedHistoryDigest} />
-          <Route path='/med-milestone' component={NewMedHistoryMilestoneForm} />
-          <Route path='/exp-digest' component={MSExperienceDigest} />
-          <Route path='/exp-milestone' component={NewMSExperienceMilestoneForm} />
-          <Route path='/about' component={About} />
-          <Route component={Error404} />
-        </Switch>
-      </Container>
-    </div>
-  );
+class App extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      masterGeneralJournal: []
+    };
+    this.handleAddingNewJournalEntry = this.handleAddingNewJournalEntry.bind(this);
+  }
+
+  handleAddingNewJournalEntry(newJournal) {
+    const newMasterGeneralJournal = this.state.masterGeneralJournal.slice();
+    newMasterGeneralJournal.push(newJournal);
+    this.setState({masterGeneralJournal: newMasterGeneralJournal});
+  }
+
+  render(){
+
+    return (
+      <div className="bodyDiv">
+        <Header/>
+        <Container>
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route exact path='/home' component={Home} />
+            <Route path='/signin' component={Signin} />
+            <Route path='/dashboard' component={Dashboard} />
+            <Route path='/journal' render={()=><GeneralJournal generalJournal={this.state.masterGeneralJournal} />} />
+            <Route path='/journal-entry' render={()=><NewEntryControl onNewJournalEntryCreation={this.handleAddingNewJournalEntry}/>} />
+            <Route path='/med-digest' component={MedHistoryDigest} />
+            <Route path='/med-milestone' component={NewMedHistoryMilestoneForm} />
+            <Route path='/exp-digest' component={MSExperienceDigest} />
+            <Route path='/exp-milestone' component={NewMSExperienceMilestoneForm} />
+            <Route path='/about' component={About} />
+            <Route component={Error404} />
+          </Switch>
+        </Container>
+      </div>
+    );
+  }
 }
 
 export default App;

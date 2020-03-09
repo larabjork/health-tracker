@@ -1,6 +1,7 @@
 import React from 'react';
 import NewGeneralJournalRecordForm from './NewGeneralJournalRecordForm';
 import Dashboard from './Dashboard';
+import PropTypes from 'prop-types';
 
 class NewEntryControl extends React.Component {
 
@@ -19,7 +20,7 @@ class NewEntryControl extends React.Component {
   render(){
     let currentlyVisibleContent = null;
     if (this.state.journalFormVisibleOnPage){
-      currentlyVisibleContent = <NewGeneralJournalRecordForm />
+      currentlyVisibleContent = <NewGeneralJournalRecordForm onNewJournalEntryCreation={this.props.onNewJournalEntryCreation}/>
     } else {
       currentlyVisibleContent = <Dashboard onStartNewJournalEntry={this.handleStartNewJournalEntry}/>;
     }
@@ -29,6 +30,10 @@ class NewEntryControl extends React.Component {
       </div>
     );
   }
+}
+
+NewEntryControl.propTypes = {
+  onNewJournalEntryCreation: PropTypes.func
 }
 
 export default NewEntryControl;
