@@ -1,4 +1,6 @@
 import React from 'react';
+import NewGeneralJournalRecordForm from './NewGeneralJournalRecordForm';
+import Dashboard from './Dashboard';
 
 class NewEntryControl extends React.Component {
 
@@ -7,19 +9,23 @@ class NewEntryControl extends React.Component {
     this.state = {
       journalFormVisibleOnPage: false
     };
-    this.handleClick = this.handleClick.bind(this);
+    this.handleStartNewJournalEntry = this.handleStartNewJournalEntry.bind(this);
   }
 
-  handleClick(){
+  handleStartNewJournalEntry(){
     this.setState({journalFormVisibleOnPage: true});
-    console.log('journalFormVisibleOnPage is currently set to:' + this.state.journalFormVisibleOnPage);
   }
 
   render(){
+    let currentlyVisibleContent = null;
+    if (this.state.journalFormVisibleOnPage){
+      currentlyVisibleContent = <NewGeneralJournalRecordForm />
+    } else {
+      currentlyVisibleContent = <Dashboard onStartNewJournalEntry={this.handleStartNewJournalEntry}/>;
+    }
     return (
-        <div>
-        <p>This is the new classy stateful component</p>
-         <strong onClick={this.handleClick}>Click me to change my state!</strong>
+      <div>
+        {currentlyVisibleContent}
       </div>
     );
   }
