@@ -26,7 +26,7 @@ function MSExperienceDigest(){
           key={index} />
       )}
 
-      <Button style={btnStyle} to="/exp-milestone" renderAs={Link}>Add New Experience Milestone</Button>
+      <Button style={btnStyle} to="/exp-milestone" renderas={Link}>Add New Experience Milestone</Button>
     </div>
   )
 };

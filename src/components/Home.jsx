@@ -33,10 +33,10 @@ function Home(){
     </Col>
   </Row>
 
-            <Button style={btnStyle} to="/signin" renderAs={Link}>Sign Me In</Button>
+            <Button style={btnStyle} to="/signin" renderas={Link}>Sign Me In</Button>
             <br/>
             <br/>
-            <Button style={btnStyle} to="/about" renderAs={Link}>Tell Me More</Button>
+            <Button style={btnStyle} to="/about" renderas={Link}>Tell Me More</Button>
       </Container>
     </div>
   )

@@ -13,7 +13,7 @@ function NewGeneralJournalRecordForm(props) {
 
   function handleNewJournalEntrySubmit(event) {
     event.preventDefault();
-    const { dispatch } = this.props;
+    const { dispatch } = props;
     const action = {
       type: 'ADD_JOURNAL',
       id: v4(),
