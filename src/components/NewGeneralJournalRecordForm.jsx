@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { v4 } from 'uuid';
 
 function NewGeneralJournalRecordForm(props){
   let _date = null;
@@ -7,7 +8,7 @@ function NewGeneralJournalRecordForm(props){
 
   function handleNewJournalEntrySubmit(event) {
     event.preventDefault();
-    props.onNewJournalEntryCreation({date: _date.value, journalEntry: _journalEntry.value});
+    props.onNewJournalEntryCreation({date: _date.value, journalEntry: _journalEntry.value, id: v4()});
     _date.value = '';
     _journalEntry.value = '';
   }

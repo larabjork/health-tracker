@@ -16,10 +16,10 @@ function GeneralJournal(props){
   return (
     <div>
       <h1>My Anything-Goes-Here Journal</h1>
-      {props.generalJournal.map((entry, index) =>
+      {props.generalJournal.map((entry) =>
         <GeneralJournalRecord date={entry.date}
           journalEntry={entry.journalEntry}
-          key={index} />
+          key={entry.id} />
       )}
     </div>
   )
