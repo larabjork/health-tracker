@@ -5,19 +5,11 @@ import { connect } from 'react-redux';
 
 
 
-class NewGeneralJournalRecordForm extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      masterGeneralJournal: []
-    };
-    this.handleAddingNewJournalEntry = this.handleAddingNewJournalEntry.bind(this);
-  }
-
-function NewGeneralJournalRecordForm(props){
-
+function NewGeneralJournalRecordForm(props) {
   let _date = null;
   let _journalEntry = null;
+
+
 
   function handleNewJournalEntrySubmit(event) {
     event.preventDefault();
