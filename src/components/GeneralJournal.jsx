@@ -12,7 +12,7 @@ function GeneralJournal(props){
       {Object.keys(props.masterGeneralJournal).map(function(entryId) {
         const entry = props.masterGeneralJournal[entryId];
         return <GeneralJournalRecord date={entry.date}
-        journalEntry={entry.JournalEntry}
+        journalEntry={entry.journalEntry}
         key={entryId}
         entryId={entryId} />;
     })}

@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { v4 } from 'uuid';
+import './../JournalForm.css';
 
 
 
@@ -25,7 +26,7 @@ function NewGeneralJournalRecordForm(props) {
 
   return (
     <div>
-      <form onSubmit={handleNewJournalEntrySubmit}>
+      <form onSubmit={handleNewJournalEntrySubmit} className="paper">
         <input
           type='text'
           id='date'
