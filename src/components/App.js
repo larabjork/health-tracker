@@ -66,7 +66,7 @@ App.propTypes = {
 
 const mapStateToProps = state =>{
   return {
-    masterGeneralJournal: state
+    masterGeneralJournal: state.masterGeneralJournal
   }
 }
 

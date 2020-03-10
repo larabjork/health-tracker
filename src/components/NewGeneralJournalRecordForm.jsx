@@ -9,8 +9,6 @@ function NewGeneralJournalRecordForm(props) {
   let _date = null;
   let _journalEntry = null;
 
-
-
   function handleNewJournalEntrySubmit(event) {
     event.preventDefault();
     const { dispatch } = props;
@@ -21,7 +19,6 @@ function NewGeneralJournalRecordForm(props) {
       journalEntry: _journalEntry.value
     }
     dispatch(action)
-    props.onNewJournalEntryCreation({date: _date.value, journalEntry: _journalEntry.value, id: v4()});
     _date.value = '';
     _journalEntry.value = '';
   }
@@ -44,10 +41,4 @@ function NewGeneralJournalRecordForm(props) {
   )
 }
 
-NewGeneralJournalRecordForm.propTypes = {
-  onNewJournalEntryCreation: PropTypes.func
-}
-
-NewGeneralJournalRecordForm = connect()(NewGeneralJournalRecordForm);
-
-export default NewGeneralJournalRecordForm;
+export default connect()(NewGeneralJournalRecordForm);

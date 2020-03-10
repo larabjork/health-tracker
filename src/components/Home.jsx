@@ -8,6 +8,7 @@ const gridCentering = {
 
 
 
+
 function Home(){
   return (
     <div>
@@ -19,13 +20,13 @@ function Home(){
               <Image src="icons8-treatment-64.png"/><h6>Appointments, tests, medications, symptoms, relapses, progression</h6>
           </Col>
           <Col xs={6} md={4}>
-            <Image src="icons8-reflection-40.png"/><h6>Diet, exercise, support groups, mediation, hobbies, therapy, acupuncture</h6>
+            <Image src="icons8-reflection-40.png"/><h6>Diet, exercise, support groups, meditation, hobbies, therapy, acupuncture</h6>
           </Col>
           <Col xs={6} md={4}>
             <Image src="icons8-journal-80.png"/><h6>Getting through the day and figuring it all out!</h6>
           </Col>
         </Row>
-        <h2>My MS Stories can help you keep track of it all!</h2>
+        <h2><span className="brandName">My MS Stories</span> can help you keep track of it all!</h2>
       </Container>
     </div>
   )
