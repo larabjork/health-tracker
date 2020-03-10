@@ -16,26 +16,16 @@ function Home(){
         <h2>And you have more than one story to tell about your life with MS.</h2>
         <Row style={gridCentering}>
           <Col xs={6} md={4}>
-              <Image src="icons8-treatment-64.png"/>
+              <Image src="icons8-treatment-64.png"/><h6>You go to the doctor(s)</h6>
           </Col>
           <Col xs={6} md={4}>
-            <Image src="icons8-reflection-40.png"/>
+            <Image src="icons8-reflection-40.png"/><h6>You take care of yourself</h6>
           </Col>
           <Col xs={6} md={4}>
-            <Image src="icons8-journal-80.png"/>
+            <Image src="icons8-journal-80.png"/><h6>You have a life</h6>
           </Col>
         </Row>
-        <Row style={gridCentering}>
-          <Col xs={6} md={4}>
-            <h6>You go to the doctor(s)</h6>
-          </Col>
-          <Col xs={6} md={4}>
-            <h6>You take care of yourself</h6>
-          </Col>
-          <Col xs={6} md={4}>
-            <h6>You have a life</h6>
-          </Col>
-        </Row>
+        <h2>My MS Stories can help you keep track of it all!</h2>
       </Container>
     </div>
   )
