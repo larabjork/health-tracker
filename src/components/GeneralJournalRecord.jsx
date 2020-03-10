@@ -4,9 +4,9 @@ import './../JournalForm.css';
 
 function GeneralJournalRecord(props){
   return (
-      <div>
-        <h6>Date: {props.date} </h6>
-        <p>Journal Entry: {props.journalEntry}</p>
+      <div className="paper">
+        <h6 className="date">Date: {props.date} </h6>
+        <p>{props.journalEntry}</p>
       </div>
   );
 }
