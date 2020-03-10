@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 function MedHistoryMilestone(props){
   return (
       <div>
-        <h3>Date: {props.date} </h3>
+        <h5>Date: {props.date} </h5>
         <p>Event: {props.historyEvent}</p>
       </div>
   );

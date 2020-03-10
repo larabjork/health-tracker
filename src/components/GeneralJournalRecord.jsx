@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 function GeneralJournalRecord(props){
   return (
       <div>
-        <h3>Date: {props.date} </h3>
+        <h6>Date: {props.date} </h6>
         <p>Journal Entry: {props.journalEntry}</p>
       </div>
   );
