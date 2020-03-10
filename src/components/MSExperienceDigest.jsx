@@ -1,7 +1,6 @@
 import React from 'react';
 import MSExperienceMilestone from './MSExperienceMilestone';
-import { Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+
 
 const masterMSExperienceDigest = [
   {

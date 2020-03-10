@@ -66,3 +66,9 @@ const btnStyle = {
   </Col>
 </Form.Group>
 </Form>
+
+
+<Button style={btnStyle} to="/signin" renderas={Link}>Sign Me In</Button>
+<br/>
+<br/>
+<Button style={btnStyle} to="/about" renderas={Link}>Tell Me More</Button>

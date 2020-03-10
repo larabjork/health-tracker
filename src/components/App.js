@@ -24,8 +24,9 @@ class App extends React.Component {
     super(props);
     console.log(props);
     this.state = {
-      masterGeneralJournal: {}    
+      masterGeneralJournal: {}
     };
+    this.handleAddingNewJournalEntry = this.handleAddingNewJournalEntry.bind(this);
   }
 
   handleAddingNewJournalEntry(newJournal) {
@@ -45,7 +46,7 @@ class App extends React.Component {
             <Route exact path='/home' component={Home} />
             <Route path='/signin' component={Signin} />
             <Route path='/dashboard' component={Dashboard} />
-            <Route path='/journal' render={()=><GeneralJournal generalJournal={this.props.masterGeneralJournal} />} />
+            <Route path='/journal' render={()=><GeneralJournal generalJournal={this.state.masterGeneralJournal} />} />
             <Route path='/journal-entry' render={()=><NewEntryControl onNewJournalEntryCreation={this.handleAddingNewJournalEntry}/>} />
             <Route path='/med-digest' component={MedHistoryDigest} />
             <Route path='/med-milestone' component={NewMedHistoryMilestoneForm} />

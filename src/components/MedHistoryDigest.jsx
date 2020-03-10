@@ -1,8 +1,5 @@
 import React from 'react';
 import MedHistoryMilestone from './MedHistoryMilestone';
-import { Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-
 
 const masterMedHistoryDigest = [
   {
