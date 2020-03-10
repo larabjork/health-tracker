@@ -11,12 +11,7 @@ const masterMedHistoryDigest = [
   }
 ]
 
-const btnStyle = {
-  backgroundColor: '#3C0142cd',
-  borderColor: '#3C0142cd',
-  color: 'white',
-  borderRadius: '3px'
-}
+
 
 
 function MedHistoryDigest(){
@@ -28,7 +23,7 @@ function MedHistoryDigest(){
           historyEvent={entry.historyEvent}
           key={index} />
       )}
-      <Button style={btnStyle} to="/med-milestone" renderas={Link}>Add New Medical Milestone</Button>
+
     </div>
   )
 };

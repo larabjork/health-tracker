@@ -9,12 +9,6 @@ const masterMSExperienceDigest = [
       experience: "First acupuncture appointment"
   }
 ]
-const btnStyle = {
-  backgroundColor: '#3C0142cd',
-  borderColor: '#3C0142cd',
-  color: 'white',
-  borderRadius: '3px'
-}
 
 function MSExperienceDigest(){
   return (
@@ -26,7 +20,6 @@ function MSExperienceDigest(){
           key={index} />
       )}
 
-      <Button style={btnStyle} to="/exp-milestone" renderas={Link}>Add New Experience Milestone</Button>
     </div>
   )
 };
