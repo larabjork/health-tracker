@@ -20,19 +20,7 @@ import PropTypes from 'prop-types';
 
 class App extends React.Component {
 
-  constructor(props) {
-    super(props);
-    console.log(props);
-    this.state = {
-    };
-    this.handleAddingNewJournalEntry = this.handleAddingNewJournalEntry.bind(this);
-  }
 
-  handleAddingNewJournalEntry(newJournal) {
-    const newMasterGeneralJournal = this.state.masterGeneralJournal.slice();
-    newMasterGeneralJournal.push(newJournal);
-    this.setState({masterGeneralJournal: newMasterGeneralJournal});
-  }
 
   render(){
 
@@ -45,8 +33,8 @@ class App extends React.Component {
             <Route exact path='/home' component={Home} />
             <Route path='/signin' component={Signin} />
             <Route path='/dashboard' component={Dashboard} />
-            <Route path='/journal' render={()=><GeneralJournal generalJournal={this.props.masterGeneralJournal} />} />
-            <Route path='/journal-entry' render={()=><NewEntryControl onNewJournalEntryCreation={this.handleAddingNewJournalEntry}/>} />
+            <Route path='/journal' render={()=><GeneralJournal masterGeneralJournal={this.props.masterGeneralJournal} />} />
+            <Route path='/journal-entry' render={()=><NewEntryControl/>} />
             <Route path='/med-digest' component={MedHistoryDigest} />
             <Route path='/med-milestone' component={NewMedHistoryMilestoneForm} />
             <Route path='/exp-digest' component={MSExperienceDigest} />

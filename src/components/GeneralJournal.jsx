@@ -5,11 +5,12 @@ import PropTypes from 'prop-types';
 
 
 function GeneralJournal(props){
+  console.log(props);
   return (
     <div>
       <h1>My Anything-Goes-Here Journal</h1>
-      {Object.keys(props.generalJournal).map(function(entryId) {
-        const entry = props.generalJournal[entryId];
+      {Object.keys(props.masterGeneralJournal).map(function(entryId) {
+        const entry = props.masterGeneralJournal[entryId];
         return <GeneralJournalRecord date={entry.date}
         journalEntry={entry.JournalEntry}
         key={entryId}
@@ -20,7 +21,7 @@ function GeneralJournal(props){
 };
 
 GeneralJournal.propTypes = {
-  generalJournal: PropTypes.object,
+  masterGeneralJournal: PropTypes.object,
   currentRouterPath: PropTypes.string
 };
 
